@@ -1,0 +1,60 @@
+body {
+	background: url('../dubai-ge62684b63_1920.jpg') no-repeat center center fixed;
+	background-size: cover;
+	font-weight: bold;
+	font-style: normal;
+}
+.container {
+	margin: 60px auto;
+	width: 400px;
+	height: 160px;
+	background-color: white;
+	text-align: center;
+	padding: 30px;
+	background-image: linear-gradient(
+		to right bottom,
+		#271e7f,
+		#2b308e,
+		#30409d,
+		#3751ab,
+		#3e61b9,
+		#2d73c6,
+		#1983d2,
+		#0094db,
+		#00a7de,
+		#00b9da,
+		#00c8d0,
+		#47d6c3
+	);
+}
+.business-card img {
+	float: left;
+}
+.username,
+.email,
+.download-cv {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+.username span {
+	border-bottom: 2px solid rgb(9, 40, 145);
+	padding-bottom: 4px;
+	color: #fff;
+}
+.email a {
+	color: darkblue;
+	font-size: 14px;
+	text-decoration: none;
+}
+.email a:hover {
+	color: lightblue;
+}
+.download-cv a {
+	color: darkblue;
+	font-size: 14px;
+	text-decoration: none;
+}
+.download-cv a:hover {
+	color: lightblue;
+}

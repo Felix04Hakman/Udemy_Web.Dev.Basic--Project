@@ -1,0 +1,210 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family: 'Raleway', sans-serif;
+	background-color: #fff;
+	color: #000;
+}
+/* header */
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+.header-bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #333;
+	opacity: 0.5;
+}
+.header-text {
+	position: absolute;
+	color: #000;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.header-text h1 {
+	margin-bottom: 5px;
+	text-shadow: 3px 3px 5px #000;
+	text-align: center;
+	display: inline-block;
+}
+.header-text span {
+	text-transform: uppercase;
+	color: rgb(14, 42, 99);
+	font-weight: bolder;
+}
+.header-text p {
+	text-align: center;
+	font-size: 15px;
+}
+.section-title {
+	margin-bottom: 20xp;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+}
+.section {
+	scroll-margin-top: 80px;
+}
+
+/* nawigacja */
+
+nav {
+	position: sticky;
+	top: 0;
+	height: 60px;
+	line-height: 60px;
+	background-color: #ddd;
+	text-align: center;
+	z-index: 10;
+}
+nav ul li > a {
+	text-decoration: none;
+}
+
+.nav-list li {
+	list-style-type: none;
+	display: inline-block;
+}
+.burger-icon {
+	display: block;
+	margin-left: auto;
+	padding: 0 30px;
+	font-size: 30px;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+.nav-items {
+	display: none;
+}
+
+.header {
+	position: relative;
+	background-image: url(../img/landscape-gf3519cd11_1920.jpg);
+	height: 400px;
+	background-position: center;
+	background-size: cover;
+}
+/* main */
+main {
+	margin: 80px 0;
+}
+
+/* o nas */
+.about-us-info {
+	margin-bottom: 10px;
+}
+.about-us .section-title {
+	background-color: #333;
+}
+/* produkty */
+.products {
+	margin: 60px auto;
+	background-color: #333;
+}
+.product {
+	position: relative;
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+}
+.first-product {
+	background-image: url(../img/children-gbabb4f761_1920.jpg);
+}
+.second-product {
+	background-image: url(../img/keyboard-g36af082b0_1920.jpg);
+}
+.third-product {
+	background-image: url(../img/laptop.jpg);
+}
+.fourth-product {
+	background-image: url(../img/laptop-gbf16afcb9_1920\(1\).jpg);
+}
+.products p,
+h3 {
+	color: #fff;
+}
+.products h3 {
+	text-transform: uppercase;
+	transition: transform 0.3s;
+}
+.products h3:hover {
+	transform: scale(1.6);
+}
+.contact {
+	text-align: center;
+}
+.contact h3 {
+	margin: 20px 0 5px;
+	text-transform: uppercase;
+}
+.contact .section-title {
+	background-color: #333;
+}
+/* footer */
+footer {
+	padding: 30px 30px;
+	text-align: center;
+	background-color: #ddd;
+}
+@media (min-width: 768px) {
+	.burger-icon {
+		display: none;
+	}
+	.nav-items {
+		display: block;
+	}
+	.nav-items a {
+		padding: 0 30px;
+		text-decoration: none;
+		text-transform: uppercase;
+		color: #333;
+		transition: color 0.3s;
+		font-weight: bold;
+	}
+	.nav-items a:hover {
+		color: rgb(85, 120, 192);
+	}
+	.header {
+		background-image: url(../img/landscape-gf3519cd11_1920.jpg);
+		height: 400px;
+	}
+	.header-text h1 {
+		font-size: 36px;
+	}
+	.header-text p {
+		font-size: 18px;
+	}
+	.products h3 {
+		font-size: 24px;
+	}
+}
+@media (min-width: 992px) {
+	.products-box {
+		font-size: 0;
+	}
+	.product {
+		display: inline-block;
+		width: 50%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.header-text h1 {
+		font-size: 42px;
+	}
+	.header-text p {
+		font-size: 20px;
+	}
+}
